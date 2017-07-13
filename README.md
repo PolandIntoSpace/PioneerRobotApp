@@ -11,16 +11,25 @@
 
 # START DES ROBOT AUF DEM PC (LINUX)
 
-für Video wird das Paket motion benötigt. 
-Weitere Anweisungen in config_Video.txt
+Für das Video wird das Paket "motion" benötigt. Das muss mit sudo apt install motion nachinstalliert werden. 
+Weitere Anweisungen in 'config_Video.txt'.
 
-In Server befinden sich udp_server (für Steuerung und telemetrie)
-in sound_server befindet sich der Server für die Hupe
+Vor start des udp_server muss der Roboter eingeschaltet und per USB an den Rechner oder Raspberry Pi angesteckt werden.
 
-vor start des udp_server muss der Roboter eingeschaltet und angesteckt werden.
+Aus dem Ordner 'Server' müssen zwei Server gestartet werden:
+- udp_server // für Steuerung und Telemetrie
+- sound_server // Server für die Hupe
+Anmerkung zum sound_server: Falls das Skript auf einem Raspberry Pi läuft muss die Ausgabe des Tons über 'omxplayer' laufen, unter Ubuntu unter mplayer. Der Hinweis wurde auch im Code vom Skript vermerkt.
 
-Zum Start der Steuerung und Telemetrie muss sudo python main.py -robotPort /dev/ttyUSB0 (USB port kann variieren) ausgeführt werden
+Der Befehle um die Server zu starten (USB port kann variieren):
+udp_server: python main.py -robotPort /dev/ttyUSB0
+sound_server: python main.py
+(evntl mit sudo probieren)
 
-Zum Start des Sound_Server muss nur sudo python main.py ausgeführt werden
+Um die Videoübertragung zu starten reicht folgender Befehl:
+sudo motion start
 
-zum Start des Videos muss sudo motion start ausgeführt werden.
+Auf dem Rechner muss ein neuer WLAN Access Point aufgemacht werden um sich mit dem Handy zu verbinden. Eine Internetverbindung ist nicht nötig.
+
+# App
+Auf dem Smartphone WLAN aktivieren und das neue WLAN auswählen (Robot_x).
