@@ -1,11 +1,9 @@
 # PioneerRobotApp
 
 # Projektstrukur:
-- <root>
-  - App			// For Android-side client 
-  - Server
-    - Aria-Controller	// UDP Recv for control messages
-    - Videostream	// RTP Video Streaming to Client over UDP
+- <root>\App\Server\
+- Aria-Controller	// UDP Recv for control messages
+- Videostream	// RTP Video Streaming to Client over UDP
 
 # Komponenten:
 - ARIA
