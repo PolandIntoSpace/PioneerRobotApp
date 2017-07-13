@@ -1,19 +1,17 @@
 # PioneerRobotApp
-# Thema: Roboter Steuerung
 
-Projektstrukur:
+# Projektstrukur:
 - <root>
   - App			// For Android-side client 
   - Server
     - Aria-Controller	// UDP Recv for control messages
     - Videostream	// RTP Video Streaming to Client over UDP
 
-Komponenten:
-
+# Komponenten:
 - ARIA
 - MobileSim
 
-START DES ROBOT AUF DEM PC (LINUX)
+# START DES ROBOT AUF DEM PC (LINUX)
 
 für Video wird das Paket motion benötigt. 
 Weitere Anweisungen in config_Video.txt
