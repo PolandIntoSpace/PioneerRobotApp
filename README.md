@@ -1,4 +1,12 @@
 # PioneerRobotApp
+Die PioneerRoboterApp wurde von insgesammt vier Studenten von der Hochschule München für das Fach Mobile Anwendungen erstellt. Sie erlaubt es den Roboter Pioneer P3-DX über eine WLAN-Verbindung zu steuern. Der Roboter wurde freundlicherweise von der Fakultät für Geoinformation zur Verfügung gestellt.
+Es gibt folgende Funktionalitäten:
+- Login über NFC Tag möglich
+- Hupe, d.h. Tonausgabe möglich falls Lautsprecher angeschlossen und zugehöriger Server gestartet
+- Video, d.h. falls Kamera angeschlossen lässt sich eine Live-Ansicht aus Sicht des Roboters auf das Smartphone streamen.
+
+Alle Komponenten zusammen wurden erfolgreich an einem leistungsschwachen Rechner mit Ubuntu 16.04 LTS getestet.
+Bis auf die Kamera wurden auch alle Komponenten auf einem Raspberry Pi getestet. Autostart wurde nicht eingerichtet.
 
 # Komponenten:
 - ARIA
@@ -38,4 +46,5 @@ Der sound_server muss für den RaspPi standartmäßig nicht umgeschrieben werden
 
 
 # App
-Auf dem Smartphone WLAN aktivieren und das neue WLAN auswählen (Robot_x).
+Auf dem Smartphone WLAN aktivieren und das neue WLAN auswählen sowie IP Adresse angeben.
+Beim ändern der IP Adresse sollte auch der NFC Tag neu beschrieben werden. Dafür gibt es zahlreiche Apps in Googles Play Store.
