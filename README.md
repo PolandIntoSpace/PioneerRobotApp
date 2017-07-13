@@ -16,9 +16,9 @@ Aus dem Ordner 'Server' müssen zwei Server gestartet werden:
 - sound_server // Server für die Hupe
 
 Der Befehle um die Server zu starten (USB port kann variieren):
-udp_server: python main.py -robotPort /dev/ttyUSB0
-sound_server: python main.py
-(evntl mit sudo probieren)
+- udp_server: python main.py -robotPort /dev/ttyUSB0
+- sound_server: python main.py
+- (evntl mit sudo probieren)
 HINWEIS: Der sound_server wurde ursprünglich für den Raspberry Pi geschrieben. Um Ton auszugeben muss die Ausgabe statt vom omxplayer über ein anderes Programm erfolgen. Eine einfache alternative ist z.B. unter Ubuntu der mplayer. Dafür reicht es im Skript 'omxplayer' gegen 'mplayer' auszutauschen. Der Hinweis wird auch im Code erwähnt.
 
 
