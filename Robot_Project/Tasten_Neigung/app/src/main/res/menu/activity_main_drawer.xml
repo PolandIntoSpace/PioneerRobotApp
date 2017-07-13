@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_login"
+                android:title="@string/menu_login"/>
+            <item
+                android:id="@+id/nav_sound"
+                android:icon="@drawable/ic_sound"
+                android:title="@string/menu_sound"/>
+            <item
+                android:id="@+id/telemetry"
+                android:icon="@drawable/ic_telemetry"
+                android:title="@string/menu_telemetry"/>
+            <item
+                android:id="@+id/video"
+                android:icon="@drawable/ic_video"
+                android:title="@string/menu_video"/>
+            <item
+                android:id="@+id/nav_steering_manual"
+                android:icon="@drawable/ic_manual"
+                android:title="@string/menu_manual"/>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/menu_help"/>
+
+
+        </group>
+</menu>
+<!--
+Image Sources
+login <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+steering <div>Icons made by <a href="http://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+question <div>Icons made by <a href="http://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+-->

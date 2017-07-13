@@ -1,0 +1,42 @@
+#source ist http://www.instructables.com/id/Raspberry-Pi-remote-webcam/
+
+#first install motion
+sudo apt-get install motion
+
+# configure motion.conf
+sudo nano /etc/motion/motion.conf
+
+# change the following entries:
+daemon on (für daemon, bei uns off)s
+output_pictures off (default on 
+stream_localhost off 
+stream_maxrate 100
+framerate 30
+width 320
+height 480
+#sdl_threadnr 0 ()
+
+#save it
+
+# enable daemon
+sudo nano /etc/default/motion
+
+#change 
+start_motion_daemon=yes
+
+#save
+
+#start (für uns)
+sudo motion start
+(falls ein daemon started, mach sudo service motion restart, dann sudo service motion stop)
+
+#start with (für daemon)
+sudo service motion start
+sudo service motion stop
+sudo service motion status
+
+#use your ip address and port 8081 (you might wanna change this in motion.conf)
+#to watch it in browser
+#it is just an example!!
+192.168.1.102:8081
+

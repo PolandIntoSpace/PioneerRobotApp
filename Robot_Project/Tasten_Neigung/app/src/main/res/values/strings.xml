@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Pioneer Robot App</string>
+
+
+    <string name="loginText">Verbinde dich über Wifi\n mit dem Roboter.</string>
+    <string name="btloginText">Verbinde mich!</string>
+    <string name="loginIP">IP</string>
+    <string name="loginNFCon">Jej! Dein Gerät unterstützt NFC. \nLege es neben den NFC Tag um die IP-Adresse auszulesen.</string>
+    <string name="loginNFCoff">Dein Gerät unterstützt kein NFC.</string>
+    <string name="loginErrorIP">Leider ist die IP nicht korrekt.</string>
+    <string name="loginFalseTag">Tag konnte leider nicht gelesen werden.\nÜberprüfe den Inhalt.</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="manual_intensity">1:\tMit dem Slider können \n fünf verschiedene \n Geschwindigkeiten eingestellt werden</string>
+    <string name="manual_orientationSensor">2:\tBeim inaktiven Neigungsensor\n wird über die Tasten gesteuert.\nDer Neigungsensor kann\n mit dem Schieber aktiviert werden.</string>
+    <string name="manual_sound">3:\tBei Hindernissen kann man hupen.</string>
+
+
+    <string name="sound_bycicle">Klingel</string>
+    <string name="sound_horn">Hupe</string>
+    <string name="sound_cat">Mieze</string>
+    <string name="sound_rollin">Rollin</string>
+
+    <string name="menu_login">Login</string>
+    <string name="menu_sound">Hupe</string>
+    <string name="menu_manual">Anleitung</string>
+    <string name="menu_telemetry">Telemetrie</string>
+    <string name="menu_video">Video</string>
+    <string name="menu_help">Hilfe</string>
+
+    <string name="video_errorPermission">Zugriff verweigert. Ich darf leider kein Foto machen!</string>
+    <string name="html1"><![CDATA["<html><body><img src=\"http://"]]></string>
+    <string name="html3"><![CDATA[/" alt="Not able to connect.Maybe Robot is offline?" width="]]></string>
+    <string name="html5"><![CDATA[" height="]]></string>
+    <string name="html7"><![CDATA["/> </body></html>]]></string>
+    <string name="mime">text/html</string>
+    <string name="encoding">UTF-8</string>
+    <string name="port">:8081</string>
+    <string name="width">95%</string>
+    <string name="height">95%</string>
+    <string name="permissionRead">android.permission.READ_EXTERNAL_STORAGE</string>
+    <string name="permissionWrite">android.permission.WRITE_EXTERNAL_STORAGE</string>
+    <string name="fileNameStart">robot-</string>
+    <string name="fileNameMiddle">-</string>
+    <string name="fileNameEnd">.jpg</string>
+    <string name="filePath">mnt/sdcard/Pictures/</string>
+    <string name="saved"> saved</string>
+
+    <string name="helpText">Warum fährt mein Roboter nicht?\n
+        \t-Ist das Smartphone über Wifi mit dem Roboter (Raspberry Pi) verbunden?\n
+        \t-Wurde die korrekte IP-Adresse eingegeben?\n \n
+    Warum funktioniert der Neigungssensor nicht?\n
+        \t-Besitzt das Gerät einen Magnetsensor und einen Beschleunigunssensor?\n\n
+        Warum kann ich kein Foto machen?\n
+        \t-Wurde die Berechtigung um auf den Speicher des Gerätes zuzugreifen gewährt?.\n\n\n
+        Bei Problemen und Fragen könnt ihr uns gerne eine Mail schreiben :) :\n
+        \t a.targowicki@hm.edu,\t\t reupold@hm.edu
+    </string>
+
+
+
+
+
+</resources>

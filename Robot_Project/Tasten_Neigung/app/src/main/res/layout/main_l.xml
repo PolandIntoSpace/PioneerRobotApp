@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpage"
+    tools:context="com.example.mischa.tasten_neigung.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/arrowUp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/arrowLeft"
+                app:srcCompat="@drawable/arrowup"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintRight_toLeftOf="@+id/arrowRight"
+                android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@+id/arrowLeft" />
+
+
+            <ImageButton
+                android:id="@+id/arrowLeft"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/arrowDown"
+                app:layout_constraintRight_toLeftOf="@+id/arrowDown"
+                app:srcCompat="@drawable/arrowleft" />
+
+            <ImageButton
+                android:id="@+id/arrowRight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toTopOf="@+id/arrowDown"
+                app:layout_constraintLeft_toRightOf="@+id/arrowDown"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/arrowright" />
+
+            <ImageButton
+                android:id="@+id/arrowDown"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:background="@android:drawable/screen_background_light_transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginBottom="88dp"
+                android:src="@drawable/arrowdown"
+                app:layout_constraintHorizontal_bias="0.754" />
+
+
+            <SeekBar
+                android:id="@+id/intensitySlider"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="92dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="14dp"
+                android:max="4"
+                android:progress="0"
+                android:rotation="270"
+                app:layout_constraintLeft_toLeftOf="@+id/arrowRight"
+                app:layout_constraintTop_toTopOf="@+id/arrowRight" />
+
+            <Switch
+                android:id="@+id/neigungssensorSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginRight="34dp"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/title_neigungssensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="16dp"
+                android:text="Neigungssensor"
+                app:layout_constraintBottom_toTopOf="@+id/neigungssensorSwitch"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btHupe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/intensitySlider"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.659"
+                app:srcCompat="@drawable/ic_sound_l" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    </android.support.v7.widget.ContentFrameLayout>
+
